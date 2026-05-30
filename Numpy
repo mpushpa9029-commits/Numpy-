@@ -1,0 +1,10 @@
+import numpy as np
+
+marks = np.array([75, 82, 90, 68, 88])
+
+print("Highest Mark:", np.max(marks))
+print("Lowest Mark:", np.min(marks))
+print("Average Mark:", np.mean(marks))
+
+above_avg = marks[marks > np.mean(marks)]
+print("Students scoring above average:", len(above_avg))
